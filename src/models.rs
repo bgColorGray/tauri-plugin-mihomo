@@ -705,6 +705,7 @@ string_enum! {
         Fallback => "Fallback",
         URLTest => "URLTest",
         LoadBalance => "LoadBalance",
+        Smart => "Smart",
     }
 }
 

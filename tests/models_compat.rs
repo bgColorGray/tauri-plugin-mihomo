@@ -98,6 +98,9 @@ fn deserialize_unknown_proxy_type() {
 fn deserialize_known_proxy_type_variants() {
     let value = parse_json::<ProxyType>("\"PassRule\"");
     assert_eq!(value, ProxyType::PassRule);
+
+    let value = parse_json::<ProxyType>("\"Smart\"");
+    assert_eq!(value, ProxyType::Smart);
 }
 
 #[test]
